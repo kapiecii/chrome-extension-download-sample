@@ -1,8 +1,8 @@
 chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
-	if (request == "Action") {
+	if (request == 'Action') {
 		downloadLinkTitle()
 	}
-});
+})
 
 const downloadLinkTitle = () => {
 
@@ -19,5 +19,5 @@ const downloadLinkTitle = () => {
 	link.href = URL.createObjectURL(blob)
 	link.download = 'title-list.txt'
 	link.click()
-	
+
 }
